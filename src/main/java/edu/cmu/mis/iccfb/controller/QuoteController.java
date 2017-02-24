@@ -37,12 +37,4 @@ public class QuoteController {
         quoteService.save(quote);
     }
     
-    
-    public Quote fallback() {
-        Quote q = new Quote();
-        Author a = new Author("Confucius");
-        q.setText("The superior man is modest in his speech, but exceeds in his actions.");
-        q.setAuthor(a);
-        return q; 
-    }
 }
